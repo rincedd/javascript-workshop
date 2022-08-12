@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+  </head>
+  <body>
+    <main id="mocha"></main>
+    <script>
+      mocha.setup('bdd');
+      expect = chai.expect;
+    </script>
+    <script src="script.js"></script>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
