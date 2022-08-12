@@ -59,7 +59,7 @@ describe("'this' in arrow functions", () => {
     getArrowFunction() {
       return () => this;
     },
-    toString() {
+    inspect() {
       return '[object functionFactory]';
     },
   };
